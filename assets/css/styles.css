@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap');
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.85) 25%, white 75%, rgba(128, 128, 128, 0.8) 25%);
+}
+
+:root {
+  --title-font-size: 1.2rem;
+  --remember-me: .7rem;
+  --button_font-size: 1rem;
+  --box-shadow: 2px 2px 6px gray;
+  --border-radius: 12px;
+}
+
+.login__container {
+  height: 100vh;
+}
+
+.login__page {
+  height: 100%;
+  width: 100%;
+}
+
+.signin,
+.signup {
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 40%;
+}
+
+@media screen and (max-width:992px) {
+
+  .signin,
+  .signup {
+    width: 70%;
+  }
+}
+
+.signin_title {
+  font-size: var(--title-font-size);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.input_border {
+  box-shadow: var(--box-shadow);
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+}
+
+.check__label,
+.description {
+  font-size: var(--remember-me);
+  font-weight: 700;
+  color: gray;
+  text-decoration: none;
+}
+
+.check__label:hover {
+  color: black;
+}
+
+button {
+  color: white;
+  background-color: gray;
+  box-shadow: var(--box-shadow);
+  border: none;
+  outline: none;
+  width: 75%;
+  border-radius: var(--border-radius);
+}
+
+button:hover {
+  background-color: black;
+  opacity: 0.8;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+input[type="checkbox"] {
+  font-size: var(--remember-me);
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="checkbox"]:checked {
+  background: white;
+  color: gray;
+}
